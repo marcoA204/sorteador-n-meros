@@ -7,9 +7,9 @@ function sortear() {
         alert('O valor "Do número" não pode ser maior que o valor "Até o número". Por favor, verifique os dados.');
         return;
     }
-    const intervalo = ate - de ;
+    const intervalo = ate - de +1;
     if (quantidade > intervalo) {
-        alert(`Você pediu ${quantidade} númeors, mas o intervalo de ${de} até ${ate} só permite ${intervalo} números únicos. verifique os dados ou aumente o intervalo.`);
+        alert(`Você pediu ${quantidade} números, mas o intervalo de ${de} até ${ate} só permite ${intervalo} números únicos. verifique os dados ou aumente o intervalo.`);
         return;
     }
 
